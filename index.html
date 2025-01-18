@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Student Login/Registration</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body background="banner.webp">
+    <div class="container">
+        <h1>NSU Registration</h1>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="stream">Stream:</label>
+            <select id="stream" name="stream" required>
+                <option value="">Select Stream</option>
+                <option value="Undergraduate Courses">Undergraduate Courses</option>
+                <option value="Postgraduate Courses">Postgraduate Courses</option>
+                <option value="Diploma Courses">Diploma Courses</option>
+                <option value="Doctoral Programs">Doctoral Programs</option>
+                <option value="Other Programs">Other Programs</option>
+            </select>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <!-- Courses will be dynamically populated based on department selection -->
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
